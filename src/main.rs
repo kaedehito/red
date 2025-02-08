@@ -22,13 +22,9 @@ fn main() {
     });
 
     let mut line = 0u64;
-    let mut file_vec: Vec<String> = file_content.lines().map(String::from).collect();
 
-    let mut chars_num = 1usize;
-
-    for _ in file_content.chars() {
-        chars_num += 1;
-    }
+    let file_vec: Vec<String> = file_content.lines().map(String::from).collect();
+    let chars_num = file_content.chars().count();
 
     println!("{chars_num}");
 
