@@ -53,7 +53,7 @@ if ($oldPath -notlike "*$installPath*") {
     [System.Environment]::SetEnvironmentVariable("Path", $newPath, [System.EnvironmentVariableTarget]::Machine)
 }
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine")
-Write-Host "Installation complete. Please restart your terminal to fully apply the changes."
+"Installation complete. Please restart your terminal to fully apply the changes."
 ```
 
 ---
