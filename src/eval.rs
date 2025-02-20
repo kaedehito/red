@@ -13,7 +13,7 @@ pub fn eval<P: AsRef<Path>>(
         match current {
             Ast::Print if current_state == Ast::Quote => {
                 for (line, content) in buffer.iter().enumerate() {
-                    println!("{}\t|{content}", line + 1);
+                    println!("{:>6}  |{content}", line + 1);
                 }
             }
 
