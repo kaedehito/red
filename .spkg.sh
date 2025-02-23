@@ -2,7 +2,7 @@ PKG_NAME="red"
 LICENSE="MIT"
 AUTHORS="Kaedehito"
 VERSION="1.0.0"
-DESCRIPTON="The test package for spkg"
+DESCRIPTON="Rust version of ed"
 
 BUILD(){
   cargo build --release
