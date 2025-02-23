@@ -9,6 +9,5 @@ BUILD(){
 }
 
 INSTALL(){
-  # Nothing to do
-  true
+  mv target/release/red .
 }
